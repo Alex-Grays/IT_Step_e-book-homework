@@ -1,0 +1,159 @@
+.navbar {
+  background-color: #4aa2ff;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.nav-item.homework .nav-link {
+  color: white !important;
+  font-size: 17px;
+  padding-top: 7px;
+}
+
+.nav-item.homework .nav-link:hover {
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  color: #d8d8d8 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ececec !important;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.navbar-nav .nav-link .fa-solid {
+  font-size: 1.4em;
+  margin-left: 10px;
+}
+
+/* Current-Date */
+
+.current-date {
+  text-align: center;
+}
+
+.col-md-12 a:hover {
+  text-decoration: none;
+}
+
+.col-md-12 hr {
+  margin: 0;
+  margin-left: 99px;
+}
+
+.col-md-2 {
+  min-width: 170px;
+}
+
+.btn-width {
+  padding-top: 31px;
+}
+
+thead {
+  background-color: #7dc4ff;
+  border-top: 2px solid #229cff;
+  color: white;
+}
+
+.num-w {
+  width: 60px !important;
+  text-align: center;
+  padding: 5px;
+}
+
+.fg-gray label {
+  color: #b5b5b5;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.va-m {
+  vertical-align: middle !important;
+}
+
+.ta-c {
+  text-align: center;
+  align-items: center;
+}
+
+.table td {
+  width: 300px;
+}
+/* icons */
+
+.fa-solid {
+  font-size: 1.5em;
+}
+
+.table .fa-solid {
+  color: #7dc4ff;
+}
+.fa-file-code {
+  font-size: 2em;
+}
+
+.fa-minus {
+  font-size: 1.7em;
+}
+
+.fa-link {
+  font-size: 1.2em;
+}
+/* Adaptation */
+
+@media (max-width: 991px) {
+  .col-md-12 hr {
+    margin-left: 85px;
+  }
+
+  .navbar-nav:first-child {
+    border-top: 2px solid #ccc;
+    margin-top: 8px;
+  }
+
+  .nav-item:hover {
+    background-color: #1687ff;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  header .fa-solid {
+    margin-right: 10px;
+  }
+}
+
+.fa-file-code {
+  font-size: 1.75em;
+}
+
+.fa-minus {
+  font-size: 1.5em;
+}
+
+.fa-link {
+  font-size: 1.05em;
+}
+
+.table td {
+  padding: 12px 15px;
+}
+
+@media (max-width: 800px) {
+  .col-md-12 {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .lesson-tab {
+    display: inline-block;
+  }
+}
