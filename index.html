@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>e-book-homework</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Завдання-2-homework</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,242 +15,193 @@
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg">
-      <a class=" navbar-brand" href="#"><i class="fa-solid fa-user-graduate"></i></a>
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-chalkboard-user"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="https://e-book-attendance.netlify.app">Attendance</a>
+            <a class="nav-link" href="https://alex-grays.github.io/IT_Step_DZ-30-04-home/#">Home <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item  active">
+            <a class="nav-link" href="https://alex-grays.github.io/IT_Step_DZ-30-04-homework/">Homework</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Schedule</a>
-          </li>
-          <li class="nav-item homework">
-            <a class="nav-link" href="https://e-book-homework.netlify.app">Homework</a>
+            <a class="nav-link" href="https://alex-grays.github.io/IT_Step_DZ-30-04-settings/#">Settings</a>
           </li>
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="https://e-book-news.netlify.app"><i class="fa-solid fa-bell"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-circle-user"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://e-book-log-in.netlify.app"><i class="fa-solid fa-door-open"></i></a>
+            <a class="nav-link" href="https://alex-grays.github.io/IT_Step_DZ-30-04-settings/#"><img src="img/av_64.png"
+                alt="иконка"></a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <!-- Current Date -->
+  <!-- Homework -->
   <div class="container mt-3 current-date">
     <div class="row">
       <div class="col-md-12">
-        <h3>HOMEWORK</h3>
+        <h1 class="thin-font">Homework</h1>
       </div>
     </div>
   </div>
 
-  <!-- Current Lesson Info -->
-  <div class="container mt-3">
-    <div class="row fg-gray">
-      <div class="col-md-2">
-        <div class="form-group">
-          <label for="groupSelect">Group</label>
-          <select class="form-control class=" sel-w"" id="groupSelect">
-            <option selected>FullStack-35</option>
-            <option>Group Name 2</option>
-            <option>Group Name 3</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="form-group">
-          <label for="subjectSelect">Subject</label>
-          <select class="form-control class=" sel-w"" id="subjectSelect">
-            <option selected>HTML & CSS</option>
-            <option>Subject Name 2</option>
-            <option>Subject Name 3</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-2 btn-width">
-        <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Show</button>
-      </div>
-    </div>
-  </div>
+  <!-- Blocks -->
+  <div class="container mt-4">
+    <h2 class="thin-font">JavaScript</h2>
+    <hr>
 
-  <!-- Таблица с домашними заданиями -->
-  <div class="container mt-3">
+    <div class="status-circle bg-white sc-1"></div>
+    <span class="status-label sl-1">current -</span>
+    <div class="status-circle bg-success sc-2"></div>
+    <span class="status-label sl-2">reviewed -</span>
+    <div class="status-circle bg-primary sc-3"></div>
+    <span class="status-label sl-3">under review -</span>
+    <div class="status-circle bg-danger sc-4"></div>
+    <span class="status-label sl-4">overdue -</span>
+
+    <!-- 1-block -->
     <div class="row">
-      <div class="col-md-12">
-        <h4>Homework Assignments</h4>
-        <table class="table">
-          <thead>
-            <tr>
-              <th></th>
-              <th class="col-md-6">Student</th>
-              <th class="ta-c">18.04</th>
-              <th class="ta-c">14.04</th>
-              <th class="ta-c">12.04</th>
-              <th class="ta-c">10.04</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="va-m">1</td>
-              <td class="va-m">Ashton Hickman</td>
-              <td class="va-m ta-c">
-                <div class="d-flex align-items-center">
-                  <i class="fa-solid fa-file-code mr-1"></i>
-                  <input class="form-control num-w" type="number" min="0" max="12"
-                    oninput="this.value = Math.min(this.value, 12)" placeholder="-">
-                </div>
-              </td>
-
-              <td class="va-m ta-c">
-                <div class="align-items-center">
-                  <i class="fa-sharp fa-solid fa-minus"></i>
-                </div>
-              </td>
-              <td class="va-m ta-c">
-                <div class="d-flex align-items-center">
-                  <i class="fa-solid fa-file-code mr-1"></i>
-                  <input class="form-control num-w" type="number" min="0" max="12"
-                    oninput="this.value = Math.min(this.value, 12)" placeholder="10">
-                </div>
-              </td>
-              <td class="va-m ta-c">
-                <div class="align-items-center">
-                  <i class="fa-sharp fa-solid fa-minus"></i>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="va-m">2</td>
-              <td class="va-m">Mischa Roberson</td>
-              <td class="va-m ta-c">
-                <div class="align-items-center">
-                  <i class="fa-sharp fa-solid fa-minus"></i>
-                </div>
-              </td>
-              <td class="va-m ta-c">
-                <div class="d-flex align-items-center">
-                  <i class="fa-sharp fa-solid fa-link mr-1"></i>
-                  <input class="form-control num-w" type="number" min="0" max="12"
-                    oninput="this.value = Math.min(this.value, 12)" placeholder="-">
-                </div>
-              </td>
-              <td class="va-m ta-c">
-                <div class="align-items-center">
-                  <i class="fa-sharp fa-solid fa-minus"></i>
-                </div>
-              </td>
-              <td>
-                <div class="d-flex align-items-center">
-                  <i class="fa-sharp fa-solid fa-link mr-1"></i>
-                  <input class="form-control num-w" type="number" min="0" max="12"
-                    oninput="this.value = Math.min(this.value, 12)" placeholder="9">
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="va-m">3</td>
-              <td class="va-m">Jaydon Metcalfe</td>
-              <td class="va-m ta-c">
-                <div class="align-items-center">
-                  <i class="fa-sharp fa-solid fa-minus"></i>
-                </div>
-              </td>
-              <td class="va-m ta-c">
-                <div class="align-items-center">
-                  <i class="fa-sharp fa-solid fa-minus"></i>
-                </div>
-              </td>
-              <td class="va-m ta-c">
-                <div class="align-items-center">
-                  <i class="fa-sharp fa-solid fa-minus"></i>
-                </div>
-              </td>
-              <td class="va-m ta-c">
-                <div class="align-items-center">
-                  <i class="fa-sharp fa-solid fa-minus"></i>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="va-m">4</td>
-              <td class="va-m">Gary Jacobson</td>
-              <td class="va-m ta-c">
-                <div class="align-items-center">
-                  <i class="fa-sharp fa-solid fa-minus"></i>
-                </div>
-              </td>
-              <td class="va-m ta-c">
-                <div class="align-items-center">
-                  <i class="fa-sharp fa-solid fa-minus"></i>
-                </div>
-              </td>
-              <td class="va-m ta-c">
-                <div class="d-flex align-items-center">
-                  <i class="fa-sharp fa-solid fa-link mr-1"></i>
-                  <input class="form-control num-w" type="number" min="0" max="12"
-                    oninput="this.value = Math.min(this.value, 12)" placeholder="11">
-                </div>
-              </td>
-              <td class="va-m ta-c">
-                <div class="d-flex align-items-center">
-                  <i class="fa-solid fa-file-code mr-1"></i>
-                  <input class="form-control num-w" type="number" min="0" max="12"
-                    oninput="this.value = Math.min(this.value, 12)" placeholder="10">
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-md-4 mb-3">
+        <div class="p-3 br-5 border" style="background-color: #f8f2f2;">
+          <h4>Loops</h4>
+          <p>10/05/2019</p>
+          <div class="input-group adap-b">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="fileInput">
+              <label class="custom-file-label" for="fileInput">Choose file</label>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Homework</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+      <!-- 2-block -->
+      <div class="col-md-4 mb-3">
+        <div class="p-3 position-relative br-5" style="background-color: #007bff; color: white;">
+          <h4>Conditional statements</h4>
+          <p>08/05/2019</p>
+          <div class="d-flex justify-content-center adap-b">
+            <button type="button" class="btn btn-outline-light btn-1" style="width: 150px;"><i
+                class="fa-sharp fa-solid fa-download pr-2"></i><br>Your file</button>
+            <button type="button" class="btn btn-outline-light btn-2" style="width: 150px;"><i
+                class="fa-solid fa-trash-can pr-2"></i>Remove</button>
+          </div>
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="themeInput">Topic:</label>
-              <input type="text" class="form-control" id="themeInput">
-            </div>
-            <div class="form-group">
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="fileInput">
-                <label class="custom-file-label" for="fileInput">Choose file...</label>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+      </div>
+      <!-- 3-block -->
+      <div class="col-md-4 mb-3">
+        <div class="p-3 position-relative br-5" style="background-color: #007bff; color: white;">
+          <h4>Variables</h4>
+          <p>05/05/2019</p>
+          <div class="d-flex justify-content-center adap-b">
+            <button type="button" class="btn btn-outline-light btn-1" style="width: 150px;"><i
+                class="fa-sharp fa-solid fa-download pr-2"></i><br>Your file</button>
+            <button type="button" class="btn btn-outline-light btn-2" style="width: 150px;"><i
+                class="fa-solid fa-trash-can pr-2"></i>Remove</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <h2 class="thin-font mt-3">HTML & CSS</h2>
+    <hr>
+    <div class="row">
+      <!-- 1-block -->
+
+      <div class="col-md-4 mb-3">
+        <div class="p-3 br-5 border" style="background-color: #ff9999; color: white;">
+          <h4>Adaptive layout</h4>
+          <p>29/04/2019</p>
+          <div class="input-group adap-b">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="fileInput">
+              <label class="custom-file-label" for="fileInput">Choose file</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2 block -->
+      <div class="col-md-4 mb-3">
+        <div class="p-3 br-5 border" style="background-color: #ff9999; color: white;">
+          <h4>Grid Layout</h4>
+          <p>27/04/2019</p>
+          <div class="input-group adap-b">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="fileInput">
+              <label class="custom-file-label" for="fileInput">Choose file</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3 block -->
+      <div class="col-md-4 mb-3">
+        <div class="p-3 br-5 position-relative" style="background-color: rgb(109, 210, 109); color: white;">
+          <h4>Flexbox</h4>
+          <p>24/04/2019</p>
+          <div class="d-flex justify-content-center adap-b">
+            <button type="button" class="btn btn-outline-light btn-1" style="width: 150px;"><i
+                class="fa-sharp fa-solid fa-download pr-2"></i><br>Your file</button>
+            <button type="button" class="btn btn-outline-light btn-2" style="width: 150px;"><i
+                class="fa-solid fa-rotate-right pr-2"></i>Resend</button>
+          </div>
+          <span class="position-absolute badge badge-pill badge-success" style="top: 10px; right: 10px;">11</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- перв блок -->
+      <div class="col-md-4 mb-3">
+        <div class="p-3 br-5 position-relative" style="background-color: rgb(109, 210, 109); color: white;">
+          <h4>Animation</h4>
+          <p>20/04/2019</p>
+          <div class="d-flex justify-content-center adap-b">
+            <button type="button" class="btn btn-outline-light btn-1" style="width: 150px;"><i
+                class="fa-sharp fa-solid fa-download pr-2"></i><br>Your file</button>
+            <button type="button" class="btn btn-outline-light btn-2" style="width: 150px;"><i
+                class="fa-solid fa-rotate-right pr-2"></i>Resend</button>
+          </div>
+          <span class="position-absolute badge badge-pill badge-success" style="top: 10px; right: 10px;">10</span>
+        </div>
+      </div>
+      <!-- Второй блок -->
+      <div class="col-md-4 mb-3">
+        <div class="p-3 br-5 position-relative" style="background-color: rgb(109, 210, 109); color: white;">
+          <h4>Forms</h4>
+          <p>18/04/2019</p>
+          <div class="d-flex justify-content-center adap-b">
+            <button type="button" class="btn btn-outline-light btn-1" style="width: 150px;"><i
+                class="fa-sharp fa-solid fa-download pr-2"></i><br>Your file</button>
+            <button type="button" class="btn btn-outline-light btn-2" style="width: 150px;"><i
+                class="fa-solid fa-rotate-right pr-2"></i>Resend</button>
+          </div>
+          <span class="position-absolute badge badge-pill badge-success" style="top: 10px; right: 10px;">10</span>
+        </div>
+      </div>
+      <!-- Третий блок -->
+      <div class="col-md-4 mb-3">
+        <div class="p-3 br-5 position-relative" style="background-color: rgb(109, 210, 109); color: white;">
+          <h4>Tables</h4>
+          <p>17/04/2019</p>
+          <div class="d-flex justify-content-center adap-b">
+            <button type="button" class="btn btn-outline-light btn-1" style="width: 150px;"><i
+                class="fa-sharp fa-solid fa-download pr-2"></i><br>Your file</button>
+            <button type="button" class="btn btn-outline-light btn-2" style="width: 150px;"><i
+                class="fa-solid fa-rotate-right pr-2"></i>Resend</button>
+          </div>
+          <span class="position-absolute badge badge-pill badge-success" style="top: 10px; right: 10px;">12</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional for dropdowns, etc.) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
